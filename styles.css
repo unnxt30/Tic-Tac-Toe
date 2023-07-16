@@ -1,0 +1,97 @@
+/* 
+secondary: #c3f30d
+secondary.2: #080807
+*/
+
+body
+{
+    padding: 0;
+    margin: 0;
+    background-color: #fffcef;
+    color: #14141a;
+}
+
+.header
+{
+    display: flex;
+    flex-direction: row;
+    background-color: #080807;
+    font-family: 'Open Sans', sans-serif;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header>div
+{
+    color: #c3f30d;
+    font-size: 48px;
+}
+
+.playGrid
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    border: 2px solid #080807;
+    margin-top: 10px;
+    height: 400px;
+    width: 400px;
+    margin-top: 30px;
+
+
+}
+
+.box
+{
+    
+    background-color: rgb(255,252,239);
+    border: 1px solid #080807;
+    font-family:'Open Sans', sans-serif;
+    padding: 0;
+    text-align: center;
+    font-size: 80px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.box:hover{
+    background-color: rgba(255, 247, 213, 0.5);
+    cursor: pointer;
+}
+
+.restart
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.restart button{
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 50px;
+    width: 120px;
+    padding: 0;
+    font-family: sans-serif;
+    font-size: 25px;
+    background-color: black;
+    color: #c3f30d;
+    transition: transform 0.3s ease;
+
+}
+
+#restart:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
